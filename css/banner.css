@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     align-items: center;
+    gap: 56px;
 }
 
 .banner__container-titulo{
@@ -32,6 +33,10 @@
     font-size: 24px;
     border: none;
     border-radius: 32px;
+}
+
+.banner__imagem{
+    width: 100%;
 }
 
 @media screen and (max-witdh:1280px){
