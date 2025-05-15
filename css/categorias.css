@@ -1,7 +1,72 @@
+.categorias{
+    padding: 80px 12.5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.categorias__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    color: var(--cor-texto-principal);
+}
+
+.categorias__texto{
+    color: var(--cor-texto-secundario);
+    font-family: var(--fonte-texto);
+    font-size: 25px;
+    line-height: 30px;
+}
+
 .categorias__list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    
-
+    grid-template-areas: 
+    "roupas roupas decoracao"
+    "canecas acessorios acessorios";
+    gap: 24px;
 }
+
+.categorias__list_item-roupas{
+    grid-area: roupas;
+}
+
+.categorias__list_item-decoracao{
+    grid-area: decoracao;
+}
+
+.categorias__list_item-canecas{
+    grid-area: canecas;
+}
+
+.categorias__list_item-acessorios{
+    grid-area: acessorios;
+}
+
+.categorias__list_item_container img{
+    height: 331px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.categorias__list_item_container{
+    background-color: var(--cor-links);
+}
+
+.categorias__list_item{
+    font-family: var(--fonte-titulo);
+    font-size: 25px;
+    color: var(--cor-texto-principal);
+    font-weight: 700;
+    box-shadow: 0px 4px 24px 0px #7B7B7B26;
+}
+
+.categorias__list_item_titulo {
+    padding: 16px 0;
+}
+
+@media screen and (max-width:)
