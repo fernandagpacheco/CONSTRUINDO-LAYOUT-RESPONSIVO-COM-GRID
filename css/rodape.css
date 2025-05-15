@@ -1,0 +1,19 @@
+.rodape{
+    background-color: var(--cor-links);
+    font-size: 16px;
+    color: var(--cor-de-fundo);
+    font-weight: 700;
+    font-family: var(--fonte-texto);
+}
+
+.rodape__linha{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.rodape__linha:last-child{
+    border-top: 1.5px solid var(--cor-destaque-secundario);
+    padding-top: 32px;
+}
